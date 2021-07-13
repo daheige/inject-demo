@@ -1,0 +1,23 @@
+AppConfig:
+  Port: 1338
+  AppEnv: dev
+  AppDebug: true
+  GraceWait: 5s
+
+DBConfig:
+  Ip: 127.0.0.1
+  Port: 3306
+  User: root
+  Password: root1234
+  Database: test
+  Charset: utf8mb4
+  Collation: utf8mb4_unicode_ci
+  MaxIdleConns: 10
+  MaxOpenConns: 200
+  MaxLifetime: 1800s
+  MaxIdleTime: 300s
+  Timeout: 5s
+  ReadTimeout: 5s
+  WriteTimeout: 5s
+  ParseTime: true
+  Loc: Local
