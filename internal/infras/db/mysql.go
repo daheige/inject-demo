@@ -19,7 +19,7 @@ func (dbConf *DBConf) ConnectDB() (*sql.DB, error) {
 	var db *sql.DB
 	db, err = sql.Open("mysql", dsn)
 	if err != nil {
-		log.Fatalln("open mysql err: %s\n", err.Error())
+		log.Fatalf("open mysql err: %s\n", err.Error())
 	}
 
 	// 设置连接池
